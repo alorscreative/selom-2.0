@@ -1,0 +1,142 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__headline {
+    display: flex;
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: $bp-1000) {
+      margin-bottom: 2rem;
+    }
+
+    h5 {
+      font-size: 3rem;
+      color: $orange;
+
+      @media only screen and (max-width: $bp-1000) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-700) {
+        font-size: 1.6rem;
+      }
+
+      &:nth-of-type(2) {
+        color: $green-light;
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+  }
+
+  &__content {
+    flex: 0 0 50%;
+
+    &--left {
+      // border: 5px solid green;
+      // height: 80rem;
+      width: 100%;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+
+        transform: scale(1.05);
+        position: relative;
+        bottom: -10rem;
+        z-index: -1;
+
+        @media only screen and (max-width: $bp-1000) {
+          bottom: -5rem;
+        }
+
+        @media only screen and (max-width: $bp-900) {
+          bottom: -2rem;
+        }
+
+        @media only screen and (max-width: $bp-600) {
+          bottom: 0rem;
+        }
+      }
+    }
+
+    &--right {
+      // border: 5px solid red;
+      padding-left: 3rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      a {
+        display: flex;
+        margin-bottom: 15rem;
+
+        @media only screen and (max-width: $bp-600) {
+          margin-bottom: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-400) {
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+
+    .iAm,
+    .leader {
+      color: $green-dark;
+    }
+
+    .iAm,
+    .leaderAdj {
+      font-size: 6rem;
+
+      @media only screen and (max-width: $bp-1200) {
+        font-size: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-800) {
+        font-size: 3rem;
+      }
+
+      @media only screen and (max-width: $bp-600) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .leaderAdj {
+      color: $orange;
+    }
+
+    .leader {
+      display: block;
+      font-size: 8rem;
+
+      @media only screen and (max-width: $bp-1200) {
+        font-size: 6rem;
+      }
+
+      @media only screen and (max-width: $bp-800) {
+        font-size: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-600) {
+        font-size: 3rem;
+      }
+    }
+  }
+}

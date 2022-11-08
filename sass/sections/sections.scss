@@ -1,0 +1,94 @@
+// For setting up padding displays and sectioning of the sections of the site 
+
+.nav {
+  &.nav-desktop {
+    padding: 3rem 8rem;
+
+    @media only screen and (max-width: $bp-900) {
+      padding: 3rem 5rem;
+    }
+  }
+
+  &.nav-mobile {
+    @media only screen and (max-width: $bp-700) {
+      padding: 2rem 3rem;
+    }
+  }
+}
+
+.hero {
+  padding: 0 8rem;
+
+  @media only screen and (max-width: $bp-900) {
+    padding: 0 5rem;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    padding: 0 3rem;
+  }
+}
+
+.getToKnowMe,
+.learnMore,
+.strengths {
+  padding: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-900) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    padding: 3rem;
+  }
+}
+
+.experience {
+  padding: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+
+  .heading__container {
+    align-self: center;
+  }
+
+  @media only screen and (max-width: $bp-900) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    padding: 3rem;
+  }
+}
+
+.emotionalIntelligence,
+.skillset {
+  .heading__container {
+    padding: 3rem 8rem 0 8rem;
+    align-self: center;
+
+    @media only screen and (max-width: $bp-900) {
+      padding: 3rem 5rem;
+    }
+  
+    @media only screen and (max-width: $bp-700) {
+      padding: 3rem;
+    }
+  }
+
+  
+}
+
+
+// Sections that require side padding only 
+
+// Sections that require side and top padding 
+
+// Sections that require no padding 

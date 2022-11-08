@@ -1,0 +1,158 @@
+.nav {
+  &.nav-desktop {
+    .nav {
+      &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__item {
+        color: $green-dark;
+        font-size: 2rem;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-1200) {
+          font-size: 1.8rem;
+        }
+
+        &--btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          padding: 2rem 1rem;
+          border: 1.2px solid $orange;
+          border-radius: 0.5rem;
+          transition: all 0.3s ease-in;
+
+          &:hover {
+            background-color: $orange;
+          }
+        }
+      }
+
+      &__link {
+        color: inherit;
+      }
+
+      &__img {
+        width: 10rem;
+        height: 10rem;
+        display: inline-block;
+
+        img {
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      display: none;
+    }
+
+  }
+
+  &.nav-mobile {
+    position: relative;
+
+    .nav {
+      &__header {
+        display: none;
+      }
+
+      @media only screen and (max-width: $bp-700) {
+        &__header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .menu-icon {
+            width: 3rem; 
+            height: 3rem;
+            fill: $orange;
+          }
+        }
+
+        &__mobile-menu {
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 100vw;
+          height: 100vh;
+          background-image: linear-gradient(to right bottom, 
+          #00631f, #004a17, $green-dark, #001707
+          );
+          z-index: 9999;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .close-icon-container {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+
+            svg {
+              width: 3rem;
+              height: 3rem;
+              fill: $orange;
+            }
+          }
+        }
+
+        &__list {
+          list-style: none;
+  
+          display: flex;
+          flex-direction: column;
+          // justify-content: space-between;
+          align-items: center;
+        }
+  
+        &__item {
+          color: $white;
+          font-size: 2rem;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          margin-bottom: 2rem;
+
+          &--btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 2rem 1rem;
+            border: 1.2px solid $orange;
+            border-radius: 0.5rem;
+          }
+        }
+  
+        &__link {
+          color: inherit;
+        }
+  
+        &__img {
+          width: 5rem;
+          height: 5rem;
+          display: inline-block;
+  
+          img {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+    } 
+  }
+}

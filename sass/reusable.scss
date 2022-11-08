@@ -1,0 +1,97 @@
+.d-none {
+  display: none !important;
+}
+
+.as-center {
+  align-self: center;
+}
+
+// BUTTONS 
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.8rem;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in;
+
+  @media only screen and (max-width: $bp-900) {
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (max-width: $bp-700) {
+    font-size: 1.4rem;
+    padding: 1.5rem 1rem;
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  &--outline-orange {
+    border: 1.2px solid $orange;
+    color: $green-dark;
+
+    &:hover {
+      background-color: $orange;
+    }
+  }
+
+  &--outline-dg {
+    border: 1.2px solid $green-dark;
+    color: $orange;
+
+    &:hover {
+      background-color: $green-dark;
+    }
+  }
+
+  &--outline-white {
+    border: 1.2px solid $white;
+    color: $green-dark;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+}
+
+// HEADINGS 
+.heading {
+
+  &__container {
+    display: flex;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-700) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__2 {
+    display: inline;
+    font-size: 4rem;
+    padding-bottom: 0.5rem;
+
+    @media only screen and (max-width: $bp-700) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-400) {
+      font-size: 2.5rem;
+    }
+    
+    &--orange {
+      color: $orange;
+      border-bottom: 4px solid $orange;
+    }
+
+    &--white {
+      color: $white;
+      border-bottom: 4px solid $white;
+    }
+  }
+}

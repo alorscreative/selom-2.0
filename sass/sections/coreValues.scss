@@ -1,0 +1,49 @@
+.core-values {
+  background-color: $green-dark;
+  padding: 5rem 0;
+
+  .value {
+    text-transform: uppercase;
+    font-size: 8rem;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-700) {
+      font-size: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+      font-size: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-300) {
+      font-size: 3rem;
+    }
+
+    &--1,
+    &--2 {
+      margin-bottom: 2rem;
+    }
+
+    &--1 {
+      color: $orange;
+    }
+
+    &--2 {
+      color: $white;
+    }
+
+    &--3 {
+      color: $green-light;
+    }
+  }
+
+  .value-text {
+    animation: ticker 5s infinite linear;
+  }
+
+  @media only screen and (max-width: $bp-500) {
+    padding: 3rem 0;
+  }
+}

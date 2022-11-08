@@ -1,0 +1,37 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $green-light;
+  padding: 5rem 0;
+
+  .social__links {
+    display: flex;
+    margin-bottom: 5rem;
+
+    .social__link {
+      cursor: pointer;
+
+      svg {
+        width: 4rem;
+        height: 4rem;
+        fill: $white;
+
+        &:hover {
+          fill: $orange;
+        }
+      }
+
+      &:first-of-type {
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 1.4rem;
+    color: $green-dark;
+  }
+}

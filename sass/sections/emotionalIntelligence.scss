@@ -1,0 +1,81 @@
+.emotionalIntelligence {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .ei {
+
+    &__point {
+      display: flex;
+
+      .point-left,
+      .point-right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+        background-color: $orange;
+
+        @media only screen and (max-width: $bp-300) {
+          padding: 1rem;
+        }
+
+        &.point-left-icon,
+        &.point-right-icon {
+          background-color: $green-light;
+        }
+        
+        p {
+          font-size: 2rem;
+          width: 70%;
+          text-align: center;
+          text-transform: uppercase;
+          color: $green-dark;
+
+          @media only screen and (max-width: $bp-700) {
+            font-size: 1.8rem;
+          }
+
+          @media only screen and (max-width: $bp-600) {
+            font-size: 1.6rem;
+          }
+
+          @media only screen and (max-width: $bp-500) {
+            font-size: 1.4rem;
+          }
+
+          @media only screen and (max-width: $bp-300) {
+            font-size: 0.8rem;
+          }
+        }
+
+        svg {
+          width: 20rem;
+          height: 20rem;
+          fill: $orange;
+
+          @media only screen and (max-width: $bp-700) {
+            width: 15rem;
+            height: 15rem;
+          }
+
+          @media only screen and (max-width: $bp-600) {
+            width: 12rem;
+            height: 12rem;
+          }
+
+          @media only screen and (max-width: $bp-500) {
+            width: 8rem;
+            height: 8rem;
+          }
+
+          @media only screen and (max-width: $bp-300) {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
