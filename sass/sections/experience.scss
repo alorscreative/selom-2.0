@@ -69,6 +69,10 @@
           transition: all 0.3 ease-in;
           display: inline-block;
 
+          @media only screen and (max-width: $bp-700) {
+            display: none;
+          }
+
           img {
             position: relative;
             width: 100%;
@@ -97,16 +101,20 @@
             }
           }
 
-          @media only screen and (max-width: $bp-700) {
-            height: 8rem;
-            width: 8rem;
-          }
+          // @media only screen and (max-width: $bp-700) {
+          //   height: 8rem;
+          //   width: 8rem;
+          // }
 
         }
 
         .experience__headings {
           margin-left: 4rem;
           text-transform: uppercase;
+
+          @media only screen and (max-width: $bp-700) {
+            margin-left: 0;
+          }
 
           h4 {
             font-size: 2.5rem;

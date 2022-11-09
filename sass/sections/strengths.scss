@@ -7,7 +7,7 @@
     justify-content: space-between;
     margin-bottom: 4rem;
 
-    @media only screen and (max-width: $bp-400) {
+    @media only screen and (max-width: $bp-500) {
       flex-direction: column;
     }
 
@@ -29,7 +29,7 @@
 
       transition: all 0.3s;
 
-      @media only screen and (max-width: $bp-400) {
+      @media only screen and (max-width: $bp-500) {
         width: 100%;
         margin-bottom: 4rem;
       }

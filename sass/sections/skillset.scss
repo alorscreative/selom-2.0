@@ -149,18 +149,26 @@
     
     .skill-left {
       left: 0;
+      justify-content: flex-end;
 
       @media only screen and (max-width: $bp-700) {
-        padding: 0rem 3rem 0 5rem;
+        padding: 0rem 5rem 0 5rem;
       }
     }
 
     .skill-right {
       right: 0;
+      justify-content: flex-end;
 
       @media only screen and (max-width: $bp-700) {
-        padding: 0rem 5rem 0 3rem;
+        padding: 0rem 5rem 0 5rem;
       }
+    }
+
+    .skill__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
