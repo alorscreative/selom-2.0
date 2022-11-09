@@ -430,11 +430,6 @@ a {
     bottom: -2rem;
   }
 }
-@media only screen and (max-width: 37.5em) {
-  .hero__content--left img {
-    bottom: 0rem;
-  }
-}
 .hero__content--right {
   padding-left: 3rem;
   display: flex;
@@ -517,9 +512,9 @@ a {
     margin-top: -5rem;
   }
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 25em) {
   .getToKnowMe {
-    margin-top: -2rem;
+    margin-top: -3rem;
   }
 }
 .getToKnowMe .video__container {
