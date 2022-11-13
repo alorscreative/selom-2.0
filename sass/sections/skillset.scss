@@ -26,10 +26,12 @@
 
     @media only screen and (max-width: $bp-700) {
       height: 30rem;
+      margin-bottom: 8rem;
     }
 
     @media only screen and (max-width: $bp-500) {
       height: 20rem;
+      margin-bottom: 5rem;
     }
 
     @media only screen and (max-width: $bp-400) {
