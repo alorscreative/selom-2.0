@@ -6,12 +6,17 @@
   color: $white;
   // height: 80rem;
 
+  
+
   .skillset__container {
     width: 100%;
     // max-width: 80rem;
     height: 80rem;
     overflow: hidden;
     position: relative;
+
+    margin-bottom: 10rem;
+    border-bottom: 5px solid $green-dark;
 
     // display: flex;
 

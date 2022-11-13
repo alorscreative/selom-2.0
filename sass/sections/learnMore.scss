@@ -1,5 +1,5 @@
 .learnMore {
-  background-color: $green-dark;
+  background-color: $white;
 
   .content {
     display: flex;
@@ -38,7 +38,7 @@
         p {
           font-size: 3rem;
           font-weight: $fw-regular;
-          color: $orange;
+          color: $green-dark;
 
           @media only screen and (max-width: $bp-1100) {
             font-size: 2.5rem;
@@ -53,7 +53,7 @@
           }
 
           span {
-            color: $white;
+            color: $orange;
           }
         }
       }
@@ -145,8 +145,8 @@
           }
 
           span {
-            color: $white;
-            opacity: 0.4;
+            color: $green-dark;
+            // opacity: 0.4;
           }
         }
 

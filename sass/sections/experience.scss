@@ -1,5 +1,9 @@
 .experience {
-  background-color: $orange;
+  // background-color: $orange;
+  background-color: $white;
+
+  border-top: 5px solid $green-dark;
+  border-bottom: 5px solid $orange;
 
   display: flex;
   flex-direction: column;
@@ -14,7 +18,7 @@
     margin-bottom: 4rem;
 
     .headline {
-      color: $white;
+      color: $green-dark;
       font-size: 2rem;
       width: 60%;
       text-align: center;
@@ -47,6 +51,8 @@
       // width: 100%;
       padding: 4rem;
       border: 1.5px solid $green-dark;
+      background-color: #fff;
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
       border-radius: 2rem;
       margin-bottom: 4rem;
       // margin: 4rem 8rem;
@@ -133,7 +139,7 @@
           .heading__row {
             display: flex;
             // justify-content: space-between;
-            color: $white;
+            color: $green-light;
           }
           
           h6 {
@@ -194,7 +200,7 @@
           text-transform: uppercase;
 
           .experience__item {
-            color: $white;
+            color: $orange;
             display: flex;
             align-items: center;
             font-size: 1.6rem;

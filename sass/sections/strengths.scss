@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
 
+  border-top: 5px solid $orange;
+  border-bottom: 5px solid $green-light;
+
   .cards {
     display: flex;
     justify-content: space-between;
@@ -21,7 +24,7 @@
       color: $white;
       text-transform: uppercase;
       text-align: center;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
 
       display: flex;
       justify-content: center;
